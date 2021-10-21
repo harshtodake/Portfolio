@@ -1,163 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+  <style>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Portfolio</title>
-    <style>
-      body{
-       
-      }
-      ul li a {
-        flex-direction: initial;
-        display: block;
-      }
-      .navbar-nav{
-        display: flex;
-        justify-content: flex-end;
 
-      }
+    ul li a {
+      flex-direction: initial;
+      display: block;
+    }
 
-      .collapse{
-        justify-content: flex-end;
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
 
-      }
-      .txt-color{
-        color: crimson;
-      }
-      .navbar-collapse{
-        font-weight: 400;
-        font-size: 20px;
+    }
 
-      }
-      .navbar-brand{
-        font-size: 25px;
-        font-weight: 650;
+    .collapse {
+      justify-content: flex-end;
+
+    }
+
+    .txt-color {
+      color: crimson;
+    }
+
+    .navbar-collapse {
+      font-weight: 400;
+      font-size: 20px;
+
+    }
+
+    .navbar-brand {
+      font-size: 25px;
+      font-weight: 650;
 
 
-      }
-      .container-fluid {
-        position: relative;
+    }
 
-      }
-      .home-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: tomato;
-    background-image: url("./images/code3.jpg");
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-  }
-  h1 ,h2 {
-    color: ##EBDDE2	;
-    padding-right: 370px;
-    padding-bottom: 20px;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    .container-fluid {
+      position: relative;
+
+    }
+
+    .home-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: tomato;
+      background-image: url("./images/code3.jpg");
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+    }
+
+    h1,
+    h2 {
+      color: #EBDDE2;
+      padding-right: 370px;
+      padding-bottom: 20px;
+      font-size: 50px;
+      font-family: 'Oswald', sans-serif;
 
 
-  }
-  h2{
-    padding-bottom: 250px;
-    font-family: 'Oswald', sans-serif;
-  }
-  .qualify {
-    text-align: center;
-    color: crimson;
-    background-color: orange;
-    padding-right: 50px;
-    padding-top: 20px;
-    text-decoration: underline;
-    text-shadow: 5px;
-    font-weight: 800;
-    font-family: 'Oswald', sans-serif;
+    }
 
-  }
-  th {
-    font-family: 'Oswald', sans-serif;
-  }
-  .project{
-    text-align: center;
-    color: #00BFFF;
-    padding-right: 50px;
-    padding-top
-    padding-bottom: 30px;
-    text-decoration: underline;
-    font-weight: 800;
-    font-family: 'Oswald', sans-serif;
-  }
-  .projects-flex {
-    width: 100%;
-    max-width: 1280px;
-    margin: 2em auto 3em auto;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    height: 100%;
-    padding-top: 15px;
-    /* overflow-y: scroll; */
-  }
+    h2 {
+      padding-bottom: 250px;
+      font-family: 'Oswald', sans-serif;
+    }
 
-  .project-tile {
-    background-color: cornsilk;
-    border-radius: 5px;
-    display: block;
-    width: 320px;
-    height: 320px;
-  }
+    .qualify {
+      text-align: center;
+      color: crimson;
+      background-color: orange;
+      padding-right: 50px;
+      padding-top: 20px;
+      text-decoration: underline;
+      text-shadow: 5px;
+      font-weight: 800;
+      font-family: 'Oswald', sans-serif;
 
-  .project-image {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-    height: 90%;
-  }
+    }
 
-  .project-title {
-    text-align: center;
-    padding: 0.5em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-  }
-  /*
+    th {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .project {
+      text-align: center;
+      color: #00BFFF;
+      padding-right: 50px;
+      padding-top : 30px;
+      text-decoration: underline;
+      font-weight: 800;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .projects-flex {
+      width: 100%;
+      max-width: 1280px;
+      margin: 2em auto 3em auto;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      height: 100%;
+      padding-top: 15px;
+      /* overflow-y: scroll; */
+    }
+
+    .project-tile {
+      background-color: cornsilk;
+      border-radius: 5px;
+      display: block;
+      width: 320px;
+      height: 320px;
+    }
+
+    .project-image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+      height: 90%;
+    }
+
+    .project-title {
+      text-align: center;
+      padding: 0.5em;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+    }
+
+    /*
   .project-title:hover {
     background-color: cornsilk;
     color:crimson;
   }*/
-  .pro-sect{
+    .pro-sect {
 
-    padding-bottom: 5px;
-    padding-top: 0px;
-  }
-  /*
+      padding-bottom: 5px;
+      padding-top: 0px;
+    }
+
+    /*
   footer {
     display: flex;
     background:#303841;
     /* border-top: 4px solid #be3144; */
-   /* padding: 0.5em 0;
+    /* padding: 0.5em 0;
     justify-content: space-evenly;
     color: #f0f0f0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -170,12 +185,13 @@
     width: 100%;
   } */
 
-.about {
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 0;
-  }
-  .about-section {
+    .about {
+      padding-left: 300px;
+      padding-right: 300px;
+      padding-top: 0;
+    }
+
+    .about-section {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -189,176 +205,205 @@
       font-family: 'Cookie', cursive;
       font-family: 'Merienda', cursive;
 
-  }
-  footer {
-    display: flex;
-    background:#303841;
-    /* border-top: 4px solid #be3144; */
-    padding: 0.5em 0;
-    justify-content: space-evenly;
-    color: #f0f0f0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: xx-large;
-    font-family: 'Cookie', cursive;
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 40px;
-  }
+    }
+
+    footer {
+      display: flex;
+      background: #303841;
+      /* border-top: 4px solid #be3144; */
+      padding: 0.5em 0;
+      justify-content: space-evenly;
+      color: #f0f0f0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: xx-large;
+      font-family: 'Cookie', cursive;
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-top: 40px;
+    }
+
+    .social {
+      display: flex;
+      color: white;
+
+      padding-top: 10px;
+      background: #303841;
+      border-top: 4px solid #be3144;
+      justify-content: space-evenly;
+      color: #f0f0f0;
 
 
- .social {
-    display: flex;
-    color: white;
+    }
 
-    padding-top: 10px;
-    background: #303841;
-    border-top: 4px solid #be3144;
-    justify-content: space-evenly;
-    color: #f0f0f0;
+    .social-icon {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-family: 'Cookie', cursive;
+      font-size: xx-large;
+      padding-top: 10px;
+    }
 
+    .fa {
+      padding: 20px;
+      text-align: center;
+      margin: 5px 2px;
+      font-size: 30px;
+      border-radius: 50%;
+    }
 
-  }
-  .social-icon{
-    color: #f0f0f0;
-    text-decoration: none;
-    font-family: 'Cookie', cursive;
-    font-size: xx-large;
-    padding-top: 10px;
-  }
-  .fa{
-    padding: 20px;
-    text-align: center;
-    margin: 5px 2px;
-    font-size: 30px;
-    border-radius: 50%;
-  }
-  .fa :hover{
-    background: #007bb5;
-  }
-  .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.whole-footer{
-  
-  padding: 0;
-  margin-top:500px ;
-  width: 100%;
-}
-.about-me{
-  margin-left: 300px;
-}
-.para  {
-    
-    font-size: 30px;
-    font-weight: 600;
-    text-align: justify;
-    justify-content: center;
-    padding-top: 0;  
-    margin-top: 20px;
-    font-family: 'Cookie', cursive;
-}
-.img-holder {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    border: 5px solid #303841;
-    /* margin-left: 10px;
+    .fa :hover {
+      background: #007bb5;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    .whole-footer {
+
+      padding: 0;
+      margin-top: 500px;
+      width: 100%;
+    }
+
+    .about-me {
+      margin-left: 300px;
+    }
+
+    .para {
+
+      font-size: 30px;
+      font-weight: 600;
+      text-align: justify;
+      justify-content: center;
+      padding-top: 0;
+      margin-top: 20px;
+      font-family: 'Cookie', cursive;
+    }
+
+    .img-holder {
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      border: 5px solid #303841;
+      /* margin-left: 10px;
     margin-left: 800px; */
-    align-items: center;
-    
-}
-.thank{
-  padding-top: 50px;
-  text-align: center;
-  text-decoration: overline;
-  font-size: 60px;
-  font-weight: 900;
-  color: #3B5998;
-  font-family: 'Cookie', cursive;
-}
-.img {
+      align-items: center;
+
+    }
+
+    .thank {
+      padding-top: 50px;
+      text-align: center;
+      text-decoration: overline;
+      font-size: 60px;
+      font-weight: 900;
+      color: #3B5998;
+      font-family: 'Cookie', cursive;
+    }
+
   
-  
-}
-.about-cont{
-  margin-left: 25%;
-  margin-right: 20%;
-}
-    </style>
-  </head>
-  <body>
-    <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Portf<span class="txt-color">olio</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" id="home">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" >Qualifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
+
+    .about-cont {
+      margin-left: 25%;
+      margin-right: 20%;
+    }
+
+    @media (min-width: 300px) {
+      .about-section1 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Portf<span class="txt-color">olio</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" id="home">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <div class="about-section">
-        <div class="about-section1" >About Me</div>
     </div>
-    <div class="text-center">
-    <img src="./images/A.jpg" class="img-holder"> 
-    </div>
-    <div class=" about-cont">
-      <p class="para">I,Harshraj Todake, am a 2021 Passout Graduate living in Mumbai,Maharashtra.</p>
-      <p class="para">I have a degree in Computer Engineering from Mumbai University.</p>
-      <p class="para">Currently I'm enrolled in the "Full Stack Web Development"Program carried out by "NewtonSchool".<br>I choose this because they teaches us from basic level to advance level and makes you industry ready.</p>
-      <p class="para">I enjoy making webpages & learning new skills. I am very good at Computer Assembling, Maintainance and troubleshooting.</p>
-      <p class="para">My dream is to get placed in good IT firm with some decent package upto 5-6 LPA.</p>
-      <p class="para">When I'm not coding, you will find me playing games on PC or the latest trending game "BGMI" on my smartphone.</p>
-      <p class="thank">Thank you</p>
-    </div>
-    <div class="whole-footer">
+  </nav>
+  <div class="about-section">
+    <div class="about-section1">About Me</div>
+  </div>
+  <div class="text-center">
+    <img src="./images/A.jpg" class="img-holder">
+  </div>
+  <div class=" about-cont">
+    <p class="para">I,Harshraj Todake, am a 2021 Passout Graduate living in Mumbai,Maharashtra.</p>
+    <p class="para">I have a degree in Computer Engineering from Mumbai University.</p>
+    <p class="para">Currently I'm enrolled in the "Full Stack Web Development"Program carried out by
+      "NewtonSchool".<br>I choose this because they teaches us from basic level to advance level and makes you industry
+      ready.</p>
+    <p class="para">I enjoy making webpages & learning new skills. I am very good at Computer Assembling, Maintainance
+      and troubleshooting.</p>
+    <p class="para">My dream is to get placed in good IT firm with some decent package upto 5-6 LPA.</p>
+    <p class="para">When I'm not coding, you will find me playing games on PC or the latest trending game "BGMI" on my
+      smartphone.</p>
+    <p class="thank">Thank you</p>
+  </div>
+  <div class="whole-footer">
     <section class="social">
-      <a href="https://www.facebook.com/harshraj.todake.90/" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/harshraj_todake_/"  target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.facebook.com/harshraj.todake.90/" target="_blank" class="social-icon"><i
+          class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/harshraj_todake_/" target="_blank" class="social-icon"><i
+          class="fa fa-instagram"></i></a>
       <a href="https://twitter.com/HarshrajTodake" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/harsh7499/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-     </section>
+      <a href="https://www.linkedin.com/in/harsh7499/" target="_blank" class="social-icon"><i
+          class="fa fa-linkedin"></i></a>
+    </section>
     <footer>
-        <div class="footer-sect">&copy; Portfolio</div>
-        <div class="footer-sect1">Created by Harshraj Todake</div>
+      <div class="footer-sect">&copy; Portfolio</div>
+      <div class="footer-sect1">Created by Harshraj Todake</div>
 
     </footer>
   </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -17,3 +17,6 @@ Setup/Installation Requirements
 -> copy contents from "https://github.com/harshtodake/Portfolio"
 -> use git clone and paste that link after it to clone the repository
 -> Open the folder it provides
+
+* Hosted link * 
+->

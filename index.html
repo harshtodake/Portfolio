@@ -1,366 +1,517 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
-    <title>Portfolio</title>
-    <style>
-      *,
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  }
-      body{
-        /* background-color: sandybrown; */
-      }
-      ul li a {
-        flex-direction: initial;
-        display: block;
-      }
-      .navbar-nav{
-        display: flex;
-        justify-content: flex-end;
-      
-      }
-      
-      .collapse{
-        justify-content: flex-end;
-        
-      }
-      .txt-color{
-        color: crimson;
-      }
-      .navbar-collapse{
-        font-weight: 400;
-        font-size: 20px;
-      
-      }
-      .navbar-brand{
-        font-size: 25px;
-        font-weight: 650;
-        
-        
-      }
-      .container-fluid {
-        position: relative;
-       
-      }
-      .home-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: tomato;
-    background-image: url("./images/code3.jpg");
-    background-position: center;
-    background-size: cover;
-    opacity: 1;
-  }
-  h1 ,h2 {
-    color: ##EBDDE2	;
-    padding-right: 370px;
-    padding-bottom: 20px;
-    font-size: 10vh;
-    font-family: 'Cookie', cursive;
-    
-    
-  }
-  h2{
-    padding-bottom: 250px;
-    font-family: 'Cookie', cursive;
-  }
-  .qualify {
-    text-align: center;
-    color: crimson;
-    background-color: orange;
-    padding-right: 50px;
-    padding-top: 20px;
-    text-decoration: underline;  
-    text-shadow: 5px;
-    font-weight: 800;
-    font-family: 'Cookie', cursive;
-    font-size: 50px;
+  <!-- Bootstrap CSS -->
 
-  }
-  th {
-    font-family: 'Oswald', sans-serif;
-  }
-  .project{
-    text-align: center;
-    color: #00BFFF;
-    padding-right: 50px;
-    padding-top
-    padding-bottom: 30px;
-    text-decoration: underline;  
-    font-weight: 800;
-    font-family: 'Cookie', cursive;
-  }
-  .projects-flex {
-    width: 100%;
-    max-width: 1280px;
-    margin: 2em auto 3em auto;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    height: 100%;
-    padding-top: 15px;
-    /* overflow-y: scroll; */
-  }
-  
-  .project-tile {
-    background-color: cornsilk;
-    border-radius: 5px;
-    display: block;
-    width: 320px;
-    height: 320px;
-  }
-  
-  .project-image {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-    height: 90%;
-  }
-  
-  .project-title {
-    text-align: center;
-    padding: 0.5em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-  }
-  /*
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Merienda:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Portfolio</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    ul li a {
+      flex-direction: initial;
+      display: block;
+    }
+
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+
+    }
+
+    .collapse {
+      justify-content: flex-end;
+
+    }
+
+    .txt-color {
+      color: crimson;
+    }
+
+    .navbar-collapse {
+      font-weight: 400;
+      font-size: 20px;
+
+    }
+
+    .navbar-brand {
+      font-size: 25px;
+      font-weight: 650;
+
+
+    }
+
+    .container-fluid {
+      position: relative;
+
+    }
+
+    .home-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: tomato;
+      background-image: url("./images/code3.jpg");
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+    }
+
+    h1,
+    h2 {
+      color: #EBDDE2;
+      padding-right: 370px;
+      padding-bottom: 20px;
+      font-size: 10vh;
+      font-family: 'Cookie', cursive;
+    }
+
+    h2 {
+      padding-bottom: 250px;
+      font-family: 'Cookie', cursive;
+    }
+
+    .qualify {
+      text-align: center;
+      color: crimson;
+      background-color: orange;
+      padding-right: 50px;
+      padding-top: 20px;
+      text-decoration: underline;
+      text-shadow: 5px;
+      font-weight: 800;
+      font-family: 'Cookie', cursive;
+      font-size: 50px;
+
+    }
+
+    th {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .project {
+      font-size: 60px;
+      text-align: center;
+      color: #00BFFF;
+      padding-top: 25px;
+      padding-right: 50px;
+      padding-bottom: 30px;
+      text-decoration: underline;
+      font-weight: 800;
+      font-family: 'Cookie', cursive;
+      /* display: flex; */
+      /* flex-direction: row; */
+    }
+
+    .projects-flex {
+      width: 100%;
+      max-width: 1280px;
+      margin: 2em auto 3em auto;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      height: 100%;
+      padding-top: 15px;
+      /* overflow-y: scroll; */
+    }
+
+    .project-tile {
+      background-color: cornsilk;
+      border-radius: 5px;
+      display: block;
+      width: 320px;
+      height: 320px;
+    }
+
+    .project-image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+      height: 90%;
+    }
+
+    .project-title {
+      text-align: center;
+      padding: 0.5em;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+    }
+
+    /*
   .project-title:hover {
     background-color: cornsilk;
     color:crimson;
   }*/
-  .pro-sect{
-    position: static;
-    width: 100%;
-    
-  }
-  footer {
-    display: flex;
-    background:#303841;
-    /* border-top: 4px solid #be3144; */
-    padding: 0.5em 0;
-    justify-content: space-evenly;
-    color: #f0f0f0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    font-size: xx-large;
-    font-family: 'Cookie', cursive;
-    /* position: fixed; */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer-sect .footer-sect1{
-    padding-top: 60px;
-  }
- .social {
-    display: flex;
-    color: white;
-    padding: 0.5em 0;
-    padding-top: 10px;
-    background: #303841;
-    border-top: 4px solid #be3144;
-    justify-content: space-evenly;
-    color: #f0f0f0;
-    
-  }
-  .social-icon{
-    color: #f0f0f0;
-    text-decoration: none;
-    font-family: 'Cookie', cursive;
-    font-size: xx-large;
-    padding-top: 10px;
-  }
-  .fa{
-    padding: 20px;
-    text-align: center;
-    margin: 5px 2px;
-    font-size: 30px;
-    border-radius: 50%;
-  }
-  .fa :hover{
-    background: #007bb5;
-  }
-  .fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-@media (min-width: 400px) { 
-  .navbar-nav{
+    .pro-sect {
+      position: static;
+      width: 100%;
+
+    }
+
+    footer {
+      display: flex;
+      background: #303841;
+      /* border-top: 4px solid #be3144; */
+      padding: 0.5em 0;
+      justify-content: space-evenly;
+      color: #f0f0f0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 700;
+      font-size: xx-large;
+      font-family: 'Cookie', cursive;
+      /* position: fixed; */
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-sect .footer-sect1 {
+      padding-top: 60px;
+    }
+
+    .social {
+      display: flex;
+      color: white;
+      padding: 0.5em 0;
+      padding-top: 10px;
+      background: #303841;
+      border-top: 4px solid #be3144;
+      justify-content: space-evenly;
+      color: #f0f0f0;
+
+    }
+
+    .social-icon {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-family: 'Cookie', cursive;
+      font-size: xx-large;
+      padding-top: 10px;
+    }
+
+    .fa {
+      padding: 20px;
+      text-align: center;
+      margin: 5px 2px;
+      font-size: 30px;
+      border-radius: 50%;
+    }
+
+    .fa :hover {
+      background: #007bb5;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    @media (min-width: 300px) {
+      .navbar-nav {
         display: flex;
         justify-content: flex-end;
       }
+
       .home-section {
-    display: flex;
-    flex-direction: column;
-    
-    background-size: cover;
-    opacity: 1;
-  }    
- }
-    </style>
-  </head>
-  <body>
-    <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Portf<span class="txt-color">olio</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" id="home">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#qualification" >Qualifications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
-        </div>
+        display: flex;
+        flex-direction: column;
+        padding-top: 40%;
+        background-size: cover;
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 1080px) {
+      .home-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0%;
+        background-size: cover;
+        opacity: 1;
+      }
+    }
+
+    .acti {
+      font-weight: 700;
+      font-size: 50px;
+      text-decoration: underline;
+      color: #FC4445;
+      font-family: 'Cookie', cursive;
+
+    }
+
+    .extra-cul {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: justify;
+      list-style-type: square;
+      padding-top: 20px;
+    }
+
+    .float-container {
+    /* border: 1px solid #FC4445; */
+    /* padding: 20px; */
+    background-color: #97CAEF;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    /* padding: 20px; */
+    background-color: #97CAEF;
+
+    /* border: 2px solid red; */
+}  
+.green{
+    font-size: 50px;
+    font-weight: 900;
+    background-color: #3FEEE6;
+    font-family: 'Cookie', cursive;
+    color: #be3144;
+
+}
+.blue {
+    font-size: 50px;
+    font-weight: 900;
+    background-color: #3FEEE6;
+    font-family: 'Cookie', cursive;
+    color: #be3144;
+
+}
+.sect-item{
+  /* margin-left: 50%; */
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  list-style-type: none;
+  text-align: justify;
+  padding-top: 20px;
+}
+.skill-cont{
+  padding-top: 10px;
+}
+  </style>
+</head>
+
+<body>
+  <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Portf<span class="txt-color">olio</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" id="home">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#qualification">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <section class="home-section btn-primary" id="home">
-      <h1 class="container text-center">Hi, I am Harshraj</h1>
-      <h2 class="container text-center">I am Computer Engineer</h2>
-    </section>
-   <section>
-      <div class="qualify bg-light" id="qualification">Qualifications</div>
-      <table class="table  table-striped table-primary">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Qualifications</th>
-            <th scope="col">University/Board</th>
-            <th scope="col">Passing Year</th>
-            <th scope="col">Percentage/Pointer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>SSC</td>
-            <td>Maharashtra Board</td>
-            <td>2014</td>
-            <td>79.40%</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Diploma in Computer Engineering</td>
-            <td>MSBTE</td>
-            <td>2017</td>
-            <td>63.31%</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>B.E</td>
-            <td>Mumbai University</td>
-            <td>2021</td>
-            <td>65.84%</td>
-          </tr>
-        </tbody>
-      </table>
-   </section>
-   <section class="pro-sect btn-light">
-     <h1 class="project btn-light" id="projects">Projects</h1>
-     <div class="projects-flex">
-      <a
-        href="https://github.com/harshtodake/ATM-Multi-Language"
-        target="_blank"
-        class="project-tile"
-      >
-        <img
-          src="./images/atm1.jpg"
-          alt="Nature bridge"
-          class="project-image"
-        />
+    </div>
+  </nav>
+  <section class="home-section btn-primary" id="home">
+    <h1 class="container text-center">Hi, I am Harshraj</h1>
+    <h2 class="container text-center">I am a Computer Engineer</h2>
+  </section>
+  <section>
+    <div class="qualify bg-light" id="qualification">Qualifications</div>
+    <table class="table  table-striped table-primary">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Qualifications</th>
+          <th scope="col">University/Board</th>
+          <th scope="col">Passing Year</th>
+          <th scope="col">Percentage/Pointer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>SSC</td>
+          <td>Maharashtra Board</td>
+          <td>2014</td>
+          <td>79.40%</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Diploma in Computer Engineering</td>
+          <td>MSBTE</td>
+          <td>2017</td>
+          <td>63.31%</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>B.E</td>
+          <td>Mumbai University</td>
+          <td>2021</td>
+          <td>65.84%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="row row-center bg-light">
+    <div class="text-center acti">Extra Curricular Activites</div>
+    <div>
+      <ul class="container extra-cul">
+        <li>Participated in “BEST BRAINS QUOTIENT 2016” a national level IT programming contest conducted at Government
+          Polytechnic Thane, Thane. — 2016.</li>
+        <li>Participated in two days workshop of “Entrepreneurship Development” at SMT Indira Gandhi College of
+          Engineering, Ghansoli, Navi Mumbai conducted by Lemon School of Entrepreneurship, Nagpur. — 2018.</li>
+        <li>Certification of Hardware and Networking from “NetTech India” — 2019.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill-cont container-fluid">
+    <div class="row row-cols-2">
+      <div class="col sect-col">
+        <div class="text-center green">Skills</div>
+        <ul>
+          <li class="sect-item text-center">HTML</li>
+          <li class="sect-item text-center">CSS</li>
+          <li class="sect-item text-center">Bootstrap</li>
+          <li class="sect-item text-center">Java</li>
+        </ul>
+      </div>
+      <div class="col ">
+        <div class="text-center blue">Languages Known</div>
+        <ul class="col sect-col">
+          <li class="sect-item text-center">Marathi</li>
+          <li class="sect-item text-center">Hindi</li>
+          <li class="sect-item text-center">English</li>
+          <li class="sect-item text-center"></li>
+      </div>
+    </div>
+  </div>
+<!-- 
+  <div class="float-container">
+
+    <div class="float-child">
+      <div class="green text-center">Skills</div>
+      <ul>
+        <li class="sect-item text-center">HTML</li>
+        <li class="sect-item text-center">CSS</li>
+        <li class="sect-item text-center">Bootstrap</li>
+        <li class="sect-item text-center">Java</li>
+      </ul>
+    </div>
+    <div class="float-container"></div>
+    <div class="float-child">
+      <div class="blue text-center">Languages Known</div>
+      <ul>
+        <li class="sect-item text-center">Marathi</li>
+        <li class="sect-item text-center">Hindi</li>
+        <li class="sect-item text-center">English</li>
+        <li class="sect-item text-center">a</li>
+      </ul>
+    </div>
+    
+  </div> -->
+
+  <section class="pro-sect btn-light container-fluid">
+    <h1 class="project btn-light" id="projects">Projects</h1>
+    <div class="projects-flex">
+      <a href="https://github.com/harshtodake/ATM-Multi-Language" target="_blank" class="project-tile">
+        <img src="./images/atm1.jpg" alt="Nature bridge" class="project-image" />
         <div class="project-title">ATM-Machine</div>
       </a>
-      <a
-        href="https://github.com/harshtodake/finalyearproject"
-        target="_blank"
-        class="project-tile"
-      >
-        <img
-          src="./images/emotion-detection.png"
-          alt="Nature bridge"
-          class="project-image"
-        />
+      <a href="https://github.com/harshtodake/finalyearproject" target="_blank" class="project-tile">
+        <img src="./images/emotion-detection.png" alt="Nature bridge" class="project-image" />
         <div class="project-title">Emotion Detection</div>
       </a>
-      <a
-        href="#"
-        target="_blank"
-        class="project-tile"
-      >
-        <img
-          src="./images/workinprogress.png"
-          alt="Nature bridge"
-          class="project-image"
-        />
+      <a href="#" target="_blank" class="project-tile">
+        <img src="./images/workinprogress.png" alt="Nature bridge" class="project-image" />
         <div class="project-title">Work in Progress</div>
       </a>
     </div>
-   </section>
-   <section class="social">
-    <a href="https://www.facebook.com/harshraj.todake.90/" target="_blank" class="social-icon"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/harshraj_todake_/"  target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
-      <a href="https://twitter.com/HarshrajTodake" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/harsh7499/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
-   </section>
+  </section>
+  <section class="social">
+    <a href="https://www.facebook.com/harshraj.todake.90/" target="_blank" class="social-icon"><i
+        class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/harshraj_todake_/" target="_blank" class="social-icon"><i
+        class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/HarshrajTodake" target="_blank" class="social-icon"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/harsh7499/" target="_blank" class="social-icon"><i
+        class="fa fa-linkedin"></i></a>
+  </section>
   <footer>
-      <div class="footer-sect">&copy; Portfolio</div>
-      <div class="footer-sect1">Created by Harshraj Todake</div>
-      
-  </footer>
-     
-   
+    <div class="footer-sect">&copy; Portfolio</div>
+    <div class="footer-sect1">Created by Harshraj Todake</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-  </body>
+  </footer>
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
