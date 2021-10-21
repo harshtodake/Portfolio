@@ -19,4 +19,4 @@ Setup/Installation Requirements
 -> Open the folder it provides
 
 * Hosted link * 
-->
+-> https://harshraj-portfolio.netlify.app/
